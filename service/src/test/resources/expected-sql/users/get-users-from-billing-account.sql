@@ -1,4 +1,4 @@
-SELECT SKIP 0 FIRST 10
+SELECT SKIP {offset} FIRST {limit}
      u.user_account_id AS id,
      u.user_name AS name
 FROM user_account u

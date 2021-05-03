@@ -244,9 +244,7 @@ public class BillingAccountResource extends BaseResource {
      * @param user the user to use
      * @param billingAccountId the billingAccountId to use
      * @param request the request to use
-     * @param challengeFeeFixed the challengeFeeFixed to use
-     * @param challengeFeePercentage the challengeFeePercentage to use
-     * @param projectId the projectId to use
+     * @param billingAccountId the billingAccountId
      * @return the ApiResponse result
      */
     @POST
@@ -269,7 +267,7 @@ public class BillingAccountResource extends BaseResource {
      * @param user the user to use
      * @param billingAccountId the billingAccountId to use
      * @param request the request to use
-     * @param projectId the projectId to use
+     * @param billingAccountId the billingAccountId to use
      * @return the ApiResponse result
      */
     @PUT

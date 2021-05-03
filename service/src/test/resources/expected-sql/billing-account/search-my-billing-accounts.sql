@@ -1,4 +1,4 @@
-SELECT SKIP 0 FIRST 10
+SELECT SKIP {offset} FIRST {limit}
       p.project_id AS id,
       p.name AS name,
       pt.payment_terms_id AS paymentTerms_id,
@@ -24,5 +24,5 @@ LEFT OUTER JOIN client_project cp ON cp.project_id = p.project_id
 JOIN project_manager pm ON pm.project_id = p.project_id
 JOIN user_account ua ON ua.user_account_id = pm.user_account_id
 JOIN common_oltp\:user co ON co.user_id = :loggedInUser AND co.handle = ua.user_name
-AND 1=1
-ORDER BY p.name asc
+AND {filter}
+ORDER BY {order}
